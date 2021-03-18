@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="king">
+	<abbreviation>♔</abbreviation>
+	<relativeValue>3</relativeValue>
+	<checkmate>true</checkmate>
+	<movement>king_moving</movement>
+	<capturing>king_moving</capturing>
+	<special>
+		<move>short_castling</move>
+		<move>long_castling</move>
+	</special>
+	<imageWhite>KingWhite.png</imageWhite>
+	<imageBlack>KingBlack.png</imageBlack>
+</chessman>

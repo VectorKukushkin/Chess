@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="rook">
+	<abbreviation>♖</abbreviation>
+	<relativeValue>5</relativeValue>
+	<checkmate>false</checkmate>
+	<movement>rook_moving</movement>
+	<capturing>rook_moving</capturing>
+	<imageWhite>RookWhite.png</imageWhite>
+	<imageBlack>RookBlack.png</imageBlack>
+</chessman>

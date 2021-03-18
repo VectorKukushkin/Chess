@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specialMove name="promotion_m">
+	<movement>true</movement>
+	<capturing>false</capturing>
+	<direction>true</direction>
+	<repetition>1</repetition>
+	<offsetX>0</offsetX>
+	<offsetY>1</offsetY>
+	<necessary>
+		<square relative="true" offsetY="1">
+			<attribute>promotionSquare</attribute>
+		</square>
+	</necessary>
+	<action>
+		<square relative="true" offsetY="1">
+			<chessman>queen</chessman>
+			<chessman>rook</chessman>
+			<chessman>bishop</chessman>
+			<chessman>knight</chessman>
+		</square>
+	</action>
+</specialMove>

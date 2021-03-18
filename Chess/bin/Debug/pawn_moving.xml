@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moving name="pawn_moving">
+	<direction>true</direction>
+	<possibleMoves>
+		<move>
+			<repetition>1</repetition>
+			<offsetX>0</offsetX>
+			<offsetY>1</offsetY>
+		</move>
+	</possibleMoves>
+</moving>

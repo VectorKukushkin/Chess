@@ -1,0 +1,46 @@
+﻿<Window x:Name="Window" x:Class="Chess.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess"
+        mc:Ignorable="d"
+        Title="Chess" Height="450" Width="800" StateChanged="Window_StateChanged" SizeChanged="Window_SizeChanged" Loaded="Window_Loaded" Icon="Assets/Chess.ico" Closing="Window_Closing">
+    <Grid>
+        <Grid x:Name="Canvas">
+            <Canvas x:Name="Grid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="0" Height="0" RenderTransformOrigin="0,0">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform x:Name="GridScale"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Grid x:Name="Board"/>
+                <Grid x:Name="Pieces"/>
+            </Canvas>
+            <Grid x:Name="Curtain" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Rectangle Fill="#7F000000"/>
+            </Grid>
+            <Grid x:Name="PromotionGrid"/>
+        </Grid>
+        <ScrollViewer x:Name="ScrollViewer" Margin="0,0,0,0" HorizontalScrollBarVisibility="Visible">
+            <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Height="100" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+        </ScrollViewer>
+        <Grid x:Name="ButtonPanel" Margin="0,0,0,0">
+            <Button x:Name="RotateButton" Click="RotateButton_Click">
+                <Image Source="Assets/Rotation.png" />
+            </Button>
+            <Button x:Name="DrawButton" Click="DrawButton_Click">
+                <Image Source="Assets/Draw.png" />
+            </Button>
+            <Button x:Name="SurrenderButton" Click="SurrenderButton_Click">
+                <Image Source="Assets/Surrender.png" />
+            </Button>
+            <Button x:Name="CloseButton" Click="CloseButton_Click">
+                <Image Source="Assets/Closing.png" />
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

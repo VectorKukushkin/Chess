@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specialMove name="short_castling">
+	<movement>true</movement>
+	<capturing>false</capturing>
+	<direction>false</direction>
+	<repetition>1</repetition>
+	<offsetX>2</offsetX>
+	<offsetY>0</offsetY>
+	<necessary>
+		<this>
+			<moved>false</moved>
+			<checked>false</checked>
+		</this>
+		<square relative="true" offsetX="1">
+			<empty>true</empty>
+			<checked>false</checked>
+		</square>
+		<square relative="true" offsetX="3">
+			<ownTeam>true</ownTeam>
+			<chessman>rook</chessman>
+			<moved>false</moved>
+		</square>
+	</necessary>
+	<action>
+		<move>
+			<relative>true</relative>
+			<x1>3</x1>
+			<y1>0</y1>
+			<x2>1</x2>
+			<y2>0</y2>
+		</move>
+	</action>
+</specialMove>

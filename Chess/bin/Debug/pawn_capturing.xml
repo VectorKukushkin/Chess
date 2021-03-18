@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moving name="pawn_capturing">
+	<direction>true</direction>
+	<possibleMoves>
+		<move>
+			<repetition>1</repetition>
+			<offsetX>1</offsetX>
+			<offsetY>1</offsetY>
+		</move>
+		<move>
+			<repetition>1</repetition>
+			<offsetX>-1</offsetX>
+			<offsetY>1</offsetY>
+		</move>
+	</possibleMoves>
+</moving>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moving name="rook_moving">
+	<direction>false</direction>
+	<possibleMoves>
+		<move>
+			<repetition>0</repetition>
+			<offsetX>0</offsetX>
+			<offsetY>1</offsetY>
+		</move>
+	</possibleMoves>
+</moving>

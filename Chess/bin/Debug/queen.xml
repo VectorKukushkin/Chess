@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="queen">
+	<abbreviation>♕</abbreviation>
+	<relativeValue>9</relativeValue>
+	<checkmate>false</checkmate>
+	<movement>queen_moving</movement>
+	<capturing>queen_moving</capturing>
+	<imageWhite>QueenWhite.png</imageWhite>
+	<imageBlack>QueenBlack.png</imageBlack>
+</chessman>

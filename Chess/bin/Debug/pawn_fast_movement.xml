@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specialMove name="pawn_fast_movement">
+	<movement>true</movement>
+	<capturing>false</capturing>
+	<direction>true</direction>
+	<repetition>1</repetition>
+	<offsetX>0</offsetX>
+	<offsetY>2</offsetY>
+	<necessary>
+		<this>
+			<moved>false</moved>
+		</this>
+		<square relative="true" offsetY="1">
+			<empty>true</empty>
+		</square>
+	</necessary>
+</specialMove>

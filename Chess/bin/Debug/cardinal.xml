@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="cardinal">
+	<relativeValue>3</relativeValue>
+	<checkmate>false</checkmate>
+	<movement>cardinal_moving</movement>
+	<capturing>cardinal_moving</capturing>
+	<imageWhite>CardinalWhite.png</imageWhite>
+	<imageBlack>CardinalBlack.png</imageBlack>
+</chessman>

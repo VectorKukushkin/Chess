@@ -1,0 +1,72 @@
+﻿<Window x:Class="Chess.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chess"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="Assets/Chess.ico" StateChanged="Window_StateChanged" SizeChanged="Window_SizeChanged" Loaded="Window_Loaded">
+    <Grid>
+        <Grid x:Name="Canvas">
+            <Canvas x:Name="Grid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="0" Height="0" RenderTransformOrigin="0,0">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform x:Name="GridScale"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Grid x:Name="Board"/>
+            </Canvas>
+        </Grid>
+        <Grid x:Name="ButtonPanel" Margin="0,0,0,0">
+            <Button x:Name="StartGameButton" Click="StartGameButton_Click">
+                <TextBlock x:Name="StartGameText" Text="Начать игру" />
+            </Button>
+            <Button x:Name="ChangePositionButton" Click="ChangePositionButton_Click">
+                <TextBlock x:Name="ChangePositionText" Text="Сменить позицию" />
+            </Button>
+            <Button x:Name="SettingsButton" Click="SettingsButton_Click">
+                <TextBlock x:Name="SettingsText" Text="Настройки" />
+            </Button>
+            <Button x:Name="ExitButton" Click="ExitButton_Click">
+                <TextBlock x:Name="ExitText" Text="Выход" />
+            </Button>
+        </Grid>
+        <Grid x:Name="ChangePositionPanel" Margin="0,0,0,0">
+            <Rectangle Fill="White" />
+            <ScrollViewer x:Name="ChangePositionScroll">
+                <Grid x:Name="ChangePositionGrid"/>
+            </ScrollViewer>
+            <TextBlock x:Name="SettingsDrawText" Text="Ничья при повторе позиции"/>
+            <TextBlock x:Name="SettingsDrawTextEx" Text="раза"/>
+            <TextBox x:Name="SettingsDrawTextBox" Text="3" TextAlignment="Center" TextChanged="SettingsDrawTextBox_TextChanged"/>
+            <CheckBox x:Name="SettingsDrawCheckBox" Checked="SettingsDrawCheckBox_Checked" Unchecked="SettingsDrawCheckBox_Unchecked">
+                <TextBlock x:Name="SettingsDrawCheckBoxText" TextWrapping="Wrap" Text="Задавать каждый раз отдельно" TextAlignment="Center" />
+            </CheckBox>
+            <TextBlock x:Name="SettingsInaccuracyText" Text="Погрешность:"/>
+            <TextBox x:Name="SettingsInaccuracyTextBox" Text="5" TextAlignment="Center" TextChanged="SettingsInaccuracyTextBox_TextChanged"/>
+            <TextBlock x:Name="Player1Text" Text="Белые:"/>
+            <TextBlock x:Name="Player2Text" Text="Чёрные:"/>
+            <RadioButton x:Name="Player1Hum" GroupName="Player1" Checked="Player1Hum_Checked">
+                <TextBlock x:Name="Player1HumText" TextWrapping="Wrap" Text="Человек" TextAlignment="Center" />
+            </RadioButton>
+            <RadioButton x:Name="Player1Comp" GroupName="Player1" Checked="Player1Comp_Checked">
+                <TextBlock x:Name="Player1ComoText" TextWrapping="Wrap" Text="Компьютер" TextAlignment="Center" />
+            </RadioButton>
+            <RadioButton x:Name="Player2Hum" GroupName="Player2" Checked="Player2Hum_Checked">
+                <TextBlock x:Name="Player2HumText" TextWrapping="Wrap" Text="Человек" TextAlignment="Center" />
+            </RadioButton>
+            <RadioButton x:Name="Player2Comp" GroupName="Player2" Checked="Player2Comp_Checked">
+                <TextBlock x:Name="Player2ComoText" TextWrapping="Wrap" Text="Компьютер" TextAlignment="Center" />
+            </RadioButton>
+            <Button x:Name="ChangePositionOKButton" Click="ChangePositionOKButton_Click">
+                <TextBlock x:Name="ChangePositionOKText" Text="Выбрать" />
+            </Button>
+            <Button x:Name="ChangePositionCancelButton" Click="ChangePositionCancelButton_Click">
+                <TextBlock x:Name="ChangePositionCancelText" Text="Отмена" />
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

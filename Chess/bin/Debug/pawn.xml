@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="pawn">
+	<abbreviation>♙</abbreviation>
+	<relativeValue>1</relativeValue>
+	<checkmate>false</checkmate>
+	<movement>pawn_moving</movement>
+	<capturing>pawn_capturing</capturing>
+	<special>
+		<move>pawn_fast_movement</move>
+		<move>en_passant</move>
+		<move>promotion_m</move>
+		<move>promotion_c</move>
+	</special>
+	<imageWhite>PawnWhite.png</imageWhite>
+	<imageBlack>PawnBlack.png</imageBlack>
+</chessman>

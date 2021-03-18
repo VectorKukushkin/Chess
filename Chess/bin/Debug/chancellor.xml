@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chessman name="chancellor">
+	<relativeValue>8</relativeValue>
+	<checkmate>false</checkmate>
+	<movement>chancellor_moving</movement>
+	<capturing>chancellor_moving</capturing>
+	<imageWhite>ChancellorWhite.png</imageWhite>
+	<imageBlack>ChancellorBlack.png</imageBlack>
+</chessman>

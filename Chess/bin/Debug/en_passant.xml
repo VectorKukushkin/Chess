@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<specialMove name="en_passant">
+	<movement>true</movement>
+	<capturing>false</capturing>
+	<direction>true</direction>
+	<symmetryX>true</symmetryX>
+	<repetition>1</repetition>
+	<offsetX>1</offsetX>
+	<offsetY>1</offsetY>
+	<necessary>
+		<lastMove>
+			<relative>true</relative>
+			<x1>1</x1>
+			<y1>2</y1>
+			<x2>1</x2>
+			<y2>0</y2>
+		</lastMove>
+		<square relative="true" offsetX="1">
+			<ownTeam>false</ownTeam>
+			<chessman>pawn</chessman>
+		</square>
+	</necessary>
+	<action>
+		<square relative="true" offsetX="1">
+			<empty>true</empty>
+		</square>
+	</action>
+</specialMove>
